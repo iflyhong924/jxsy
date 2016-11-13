@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>活动</title>
+
+<link href="css/base.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet" >
+<link href="css/article.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/widget.js"></script>
+<script type="text/javascript" src="js/选项卡.js"></script>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/index_header.js"></script>
+<script>
+window.onload=function(){
+//---------选项卡----------------------------
+	show();
+//---------图片向上移动----------------------------
+	run();
+	
+	var pic=document.getElementById("pic");
+	var cover=document.getElementsByClassName("cover")
+	
+//---------头部---------------------------	
+	header();
+}
+
+
+//$(function(){
+//	$(".pic").mousemove(function(){
+//		$(".cover").fadeIn("normal")
+//	)
+//	$(".pic").mouseout(function(){
+//		$(".cover").fadeOut("normal");
+//	)
+//       
+//})
+</script>
+</head>
+
+<body>
+
+<div class="header">
+    <ul class="inner">
+        <ul id="logo">
+           <li class="logo"><a href="index.html"><img src="imgs/logo.png"></a> </li>
+                <li class="art"><a href="article.html">文章</a></li>
+                <li><a href="Appreciate.html">欣赏</a></li>
+                <li><a href="sucai.html">素材</a></li>
+                <li><a href="exchange.html">兑换</a></li>
+                <li><a href="activity.html">活动</a></li>
+                <li><a href="weiran.html">社区</a></li>
+                <li class="more">
+                    <a href="more.html">更多</a>
+                </li>
+        </ul>
+        <div class="header-right">
+            <ul>
+                <li class="yang">
+                    <a id="search_btn" href="#"><i class="fa fa-search"></i></a>
+                    <div class="header-search">
+                        <span><i class="fa fa-search"></i></span>
+                        <input type="text" placeholder="输入关键字搜索…"/>
+                    </div>
+    
+                </li>
+                <li class="btn-l"><a href="">登录</a></li>
+                <li class="btn-r"><a href="">注册</a></li>
+    
+            </ul>
+    
+        </div>
+        <div class="clear"></div>
+</div>
+        
+<div class="banner">
+	<div class="inner">
+        <h3>活动 · 专题</h3>
+        <p>Activities and topics</p>
+        <div class="clear"></div>
+    </div>
+</div>    
+<div class="main">
+	<div class="inner">
+        <ul class="ul">
+            <li><a href="javascript:;">全部</a></li>
+            <li><a href="javascript:;">赛事</a></li>
+        </ul>
+        <div class="clear"></div>
+        <div class="content">
+            <div class="cont-item" style="display:block">
+                <ul>
+                    <li>
+                        <div class="pic"  id="pic">
+                            <i class="icons"></i>
+                            <a href="javascript:;"><img src="images/wKgBzFSn6ANA4237.tub.jpg"/></a>
+                            <a href="#">
+                                <div class="cover">
+                                    <i id="share" class="share fa fa-share"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bottom1"><p>让镜像再次唤醒你的摄影天赋 – 2015 创意摄影大赛</p><div class="exchanges">2015-08-10</div><div class="clear"></div></div>
+                        
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="cont-item">
+                <ul>
+                    <li>
+                        <div class="pic"  id="pic">
+                            <i class="icons"></i>
+                            <a href="javascript:;"><img src="images/wKgBzFYl802Acbn2AAKtKzU0QQk761.tub.jpg"/></a>
+                            <a href="#">
+                                <div class="cover">
+                                    <i id="share" class="share fa fa-share"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bottom1"><p>让镜像再次唤醒你的摄影天赋 – 2015 创意摄影大赛</p><div class="exchanges">2015-08-10</div><div class="clear"></div></div>
+                        
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bottom">
+	<div class="inner">
+    	<div class="wei">
+        	<h3>镜像</h3>
+            <p>以用户为中心的摄影理念，专注于用户体验摄影，拥有国内外最新的摄影潮流趋势、独特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！</p>
+            <p>唯然是镜像摄影的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、设计、时尚、插画、摄影、唯美类精美图片。</p>
+        </div>
+        <dl>
+        	<dt>关于</dt>
+            <dd><a href="#">关于镜像</a></dd>
+            <dd><a href="#">留言联系</a></dd>
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#">负责声明</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+        </dl>
+         <dl>
+        	<dt>栏目</dt>
+            <dd><a href="#">用户体验</a></dd>
+            <dd><a href="#">素材下载</a></dd>
+            <dd><a href="#">摄影欣赏</a></dd>
+            <dd><a href="#">主题商城</a></dd>
+            <dd><a href="#">唯然灵感</a></dd>
+        </dl>
+         <dl>
+        	<dt>友链</dt>
+            <dd><a href="#">摄影之旅</a></dd>
+            <dd><a href="#">手Q阅读中心</a></dd>
+            <dd><a href="#">FrozenUI</a></dd>
+            <dd><a href="#">摄影达人</a></dd>
+            <dd><a href="#">MAKA</a></dd>
+        </dl>
+        <div class="lxfs">
+        	<h3>关注</h3>
+            <p>Email: javin@jiawin.com</p>
+            <input class="text" type="text" placeholder="请输入您的邮箱"><input class="sub" type="submit" value="订阅">
+            <ul>
+            	<li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-tencent-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<div class="clear"></div>
+<div class="footer">
+	<div class="inner">
+    	<p>Copyright © 2012-2016 <span>镜像摄影</span> Theme by <span>Javin zhong</span> All All Rights Reserved. 京ICP备12073831号-1</p>
+    </div>
+</div>
+</body>
+</html>

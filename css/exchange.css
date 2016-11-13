@@ -1,0 +1,42 @@
+
+
+.banner{width:100%;background:url(../images/shop-bg.png) no-repeat;text-align:center;height:250px;}
+.banner h3{font-size:28px;font-weight:normal;color:#fff;line-height:47px;padding-top:113px;}
+.banner p{font-weight:normal;color:#fff;line-height:23px;margin-bottom:67px;}
+.main{background:#f1f1f1;}
+.main .inner{width:1260px;}
+.main .inner .ul{width:23%;height:60px;text-align:center;border-bottom:1px solid #ccc;padding:0px 38%;margin:0px auto;}
+.main .inner .ul li{padding-top:4px;width:48px;line-height:56px;margin:0px 22px;float:left;font-size:14px;text-align:center;}
+.main .inner .ul li a{color:#000;}
+/*.main .ul li:hover{border-bottom:1px solid #666;}*/
+.ac{border-bottom:1px solid #666;}
+.main .content{height:376px;}
+.main .content .cont-item{padding:20px 0px 60px 0px;display:none;}
+.main .content .cont-item ul{margin-bottom:58px;}
+.main .content .cont-item ul li{background:#fff;float:left;width:274px;height:269px;padding:10px 14px 16px 14px;border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;border-bottom:2px solid #d8d8d8 ;border-top:none;margin-right:18px;position:relative;}
+.main .content .cont-item ul li .position{position:absolute;left:0px;bottom:3px;padding:15px;color:#777;}
+.main .content .cont-item ul li .pic{z-index:-100;}
+.main .content .cont-item ul li .pic img{z-index:-100;}
+.main .content .cont-item ul li .pic p{line-height:18px;display:none;margin-top:0px;}
+.main .content .cont-item ul li .cont{line-height:18px;margin-top:0px;margin-bottom:15px;}
+.main .content .cont-item ul li .bottom1{height:24px;}
+.main .content .cont-item ul li .bottom1 p{float:left;color:#ea4c89;height:24px;line-height:17px;}
+.main .content .cont-item ul li .bottom1 p span{font-size:24px;margin-right:3px;line-height:24px;}
+.main .content .cont-item ul li .bottom1 .exchanges{float:right;margin-right:15px;width:68px;height:24px;line-height:24px;background:#ea4c89;color:#fff;text-align:center;border-radius:2px;}
+.main .content .cont-item ul li .bottom1 .exchanges a{color:#fff;}
+
+
+/*******************-----效果----*********************/
+.main .content .cont-item ul li .pic{overflow:hidden;}
+.main .content .cont-item ul li .pic img{transition:all 0.6s;}
+.main .content .cont-item ul li .pic:hover img{margin-top:-10px;transition:all 0.6s;}
+.main .content .cont-item ul li .pic:hover p{color:#000;line-height:10px;transition:all 0.6s 3s;display:block;z-index:20;}
+
+
+@media  screen and (max-width:1470px){
+	.inner{width:98%}
+	.main .inner ul{width:50%;}
+	.main .inner .content{width:48%;}
+	.main .content .cont-item ul li{width:35%;height:99%;float:left;}
+		
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{background:#f1f1f1;padding-top:50px;}
+.main .menu{height:50px; border-bottom:1px solid #d8d8d8;}
+.main .menu ul li{float:left; margin-right:20px; font-size:14px; cursor:pointer; position:relative; z-index:99;}
+.main .menu ul li a{display:block; width:85px; height:50px; line-height:50px; padding:0px 10px 0px 35px; position:relative;}
+
+.main .menu ul li .fa{font-size:inherit; color:#999; position:absolute; right:15px; top:18px;}
+.main .menu ul li i:first-child{position:absolute; left:20px; top:18px; color:#666;}
+.main .menu ul li .arrow{transition:all 0.2s;}
+.main .menu ul li .menutwo{background:#fff; border-radius:0px 0px 6px 6px; width:130px; box-shadow:1px 1px 1px rgba(0,0,0,0.2); 
+display:none; position:absolute; left:0px; top:50px; z-index:10;  }
+.main .article{margin:20px auto 0px auto;}
+.main .article ul li{width:300px; float:left; margin:0px 20px 30px 0px; background:#fff; transition: all 0.2s;}
+.main .article ul li .item{box-shadow:0 1px 1px rgba(0,0,0,0.15); border:10px solid #fff; border-bottom:none; overflow:hidden; position:relative;}
+.main .article ul li .item .pic{width:280px; height:180px; overflow:hidden;}
+.main .article ul li .item .pic span{width:280px; height:180px; background:rgba(0,0,0,0.3); position:absolute; z-index:10; display:none;}
+.main .article ul li .item .pic img{width:100%; height:100%; transition:all 0.3s;}
+.main .article ul li .item .title{padding:8px 5px;}
+.main .article ul li .item .title h4 a{display:block; height:18px; line-height:18px; color:#444; overflow:hidden; text-overflow:ellipsis;}
+.main .article ul li .item .title .extra{width:230px; background:#222; padding:8px 25px; color:#fff; position:absolute; left:0px; top:-34px; transition:all 0.3s; z-index:20;}
+.main .article ul li .item .title .extra a{float:left; color:#fff;}
+.main .article ul li .item .title .extra span{float:right;}
+.main .article ul li .item .title .extra .fa-left{position:absolute; left:10px; top:13px;}
+.main .article ul li .item .title .extra .fa-right{position:absolute; right:10px; top:13px;}
+.main .article ul li .item .data{padding:8px 5px; border-top:1px solid #f2f2f2; color:#999;}
+.main .article ul li .item .data .time{float:left;}
+.main .article ul li .item .data span{float:right;}
+.ac{border-radius:6px 6px 0px 0px; background:#fff; cursor:pointer;}
+/*-------------------------main:hover--------------------------------------------*/
+.main .menu ul li:hover{box-shadow:1px 1px 1px rgba(0,0,0,0.2);}
+.main .menu ul li:hover .arrow{transform:rotate(180deg);}
+.main .menu ul li .menutwo li a:hover{background:#00c3b6; color:#fff; transition:all 1s; }
+.main .menu ul li .menutwo .last a:hover{border-radius:0px 0px 6px 6px;}
+.main .article ul li .item .title .extra a:hover{color:#00c3b6;}
+.main .article ul li:hover h4 a{color:#00c3b6 !important;}
+.main .article ul li:hover .extra{transform:translateY(34px);}
+.main .article ul li:hover .pic span{display:block;}
+.main .article ul li:hover img{transform:translateY(10px);}
+
+/*---------------------------特殊字体---------------------------------------------*/
+@font-face{font-family:stylezed; src:url(../fonts/fontawesome-webfont.eot), url(../fonts/fontawesome-webfont.svg), url(../fonts/fontawesome-webfont.ttf), url(../fonts/fontawesome-webfont.woff), url(../fonts/fontawesome-webfont.woff2);}
+/*----------------------------响应式----------------------------------------------*/
+@media screen and (max-width:1260px){
+	.inner{width:96%;}
+	.main .article ul{width:960px; margin:0px auto;}
+	.main .article ul li{margin:0px 10px 30px;}
+	.main .article ul .marginRight{margin-right:10px !important;}
+}
+@media screen and (max-width:1024px){
+	.inner{width:96%;}
+	.main .article ul{width:640px; margin:0px auto;}
+	.main .article ul li{margin:0px 10px 30px;}
+	.main .article ul .marginRight{margin-right:10px !important;}
+}
+@media screen and (max-width:760px){
+	.inner{width:96%;}
+	.main .article ul{width:320px; margin:0px auto;}
+	.main .article ul li{margin:0px 10px 30px;}
+	.main .article ul .marginRight{margin-right:10px !important;}
+}
